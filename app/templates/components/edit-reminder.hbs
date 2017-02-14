@@ -1,0 +1,16 @@
+<form {{action 'editReminder' on="submit"}}>
+  <label>
+    Title:
+    {{input class="edit-input-title" value=title}}
+  </label>
+  <label>
+    Date:
+    {{input class="edit-input-date" value=date}}
+  </label>
+  <label>
+    Notes:
+    {{textarea class="edit-textarea-notes" value=notes}}
+  </label>
+  //link here??
+    <button class='edit-save-btn'>Save</button>
+</form>

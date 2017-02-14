@@ -29,3 +29,11 @@ test('clicking on an individual item', function(assert) {
     assert.equal(Ember.$('.spec-reminder-item:first').find('h2').text().trim(), Ember.$('.spec-reminder-title').first().text().trim());
   });
 });
+
+test('if there are no reminders, display message', function(assert) {
+  // visit('/reminders');
+    // this.set('reminder', {reminder: { title:'buy stuff', date: 'now', notes: 'nephew bday'}})
+  // andThen(function () {
+    assert.equal(Ember.$('p').text().trim(), 'You dont have any reminders yet!');
+  // });
+});
