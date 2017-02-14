@@ -6,7 +6,7 @@
   {{/link-to}}
   <p class='spec-reminder-date'>{{reminder.date}}</p>
   <p class='spec-reminder-notes'>{{reminder.notes}}</p>
-    {{#link-to 'reminders.reminder.edit'}}
-  <button class='reminder-edit-btn'>edit</button>
+    {{#link-to 'reminders.reminder.edit' reminder}}
+      <button class='reminder-edit-btn'>edit</button>
     {{/link-to}}
 </article>
