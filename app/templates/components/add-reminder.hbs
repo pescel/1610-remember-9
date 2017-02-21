@@ -1,21 +1,21 @@
-<form class="add-reminder-form" {{action 'addReminder' on="submit"}}>
-  <label>
+<form class='add-reminder-form' {{action 'addReminder' on='submit'}}>
+  <label class='new-title-label'>
     Title:
-    {{input class="input-title" value=title}}
+    {{input class='input-title' value=title}}
   </label>
-  <label>
-    Date
-    {{input class="input-date" value=date}}
+  <label class='new-date-label'>
+    Date:
+    {{input class='input-date' value=date}}
   </label>
-  <label>
-    Notes
-    {{textarea class="textarea-notes" value=notes}}
+  <label class='new-notes-label'>
+    Notes:
+    {{textarea class='textarea-notes' value=notes}}
   </label>
-<button class="add-reminder-submit">Submit</button>
+<button class='add-reminder-submit'>Submit</button>
 </form>
 
 {{#link-to 'reminders'}}
-  <button classname='reminders-link-from-add'>
+  <button class='see-reminders-btn'>
     See All Reminders
   </button>
 {{/link-to}}
